@@ -6569,19 +6569,21 @@ img {
   position: absolute;
   transition: all 0.4s;
 }
+
 .sub-menu-dropdown {
   visibility: hidden;
-  transition: 2s !important;
+  
   opacity: 1;
   z-index: 9;
   top: 40px;
   position: absolute;
-  width: 200px;
+  width: 400px;
   right: -190px;
   padding-left: 20px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
+
 .dropdown-padding li:hover .sub-menu-dropdown {
   visibility: visible;
   opacity: 1;
@@ -6590,7 +6592,13 @@ img {
   transition: 2s !important;
   margin-left: 10px;
   position: absolute;
-  transition: all 0.4s;
+  
+}
+.sub-menu-dropdown li{
+  text-transform: uppercase !important;
+}
+.sub-menu li{
+  text-transform: uppercase !important;
 }
 
 
@@ -6612,7 +6620,7 @@ img {
 }
 
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li:hover>a {
-  transition: all 0.4s;
+  
   color: var(--ztc-text-text-2) !important;
 }
 
@@ -12703,44 +12711,185 @@ h3 {
   .tech-data ul {
     flex: 1 1 100%;
   }
-  
-  
+
+
 }
 
-.carousel-control-prev-icon{
+.product-page .carousel-control-prev-icon {
   background-color: #1a5fb4 !important;
   padding: 20px !important;
   border-radius: 5px !important;
   font-size: 10px !important;
 }
-.carousel-control-next-icon{
+
+.product-page .carousel-control-next-icon {
   background-color: #1a5fb4 !important;
   padding: 20px !important;
   border-radius: 5px !important;
   font-size: 10px !important;
 }
-.carousel-item{
+
+.product-page .carousel-item {
   padding: 100px !important;
   border-radius: 10px;
   margin-top: 40px;
- border: 1px solid gray;
-  
+  border: 1px solid gray;
+
 }
+
 @media (max-width:768px) {
-  .carousel-item{
+  .product-page .carousel-item {
     padding: 30px !important;
-    
+
   }
-  .carousel-control-prev-icon{
+
+  .product-page .carousel-control-prev-icon {
     padding: 10px !important;
     border-radius: 5px !important;
     font-size: 5px !important;
     margin-top: 40px;
   }
-  .carousel-control-next-icon{
+
+  .product-page .carousel-control-next-icon {
     margin-top: 40px;
     padding: 10px !important;
     border-radius: 5px !important;
     font-size: 5px !important;
   }
+}
+
+
+
+ul.dropdown {
+  display: none;
+  list-style: none;
+  padding-left: 15px;
+  background: #f9f9f9;
+}
+
+li.submenu {
+  position: relative;
+}
+
+li.submenu:hover>ul.dropdown {
+  display: block;
+}
+
+/* Show submenu if "show" class is added via JS */
+li.submenu.show>ul.dropdown {
+  display: block !important;
+}
+
+/* Optional style enhancements */
+.nav-link {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+
+}
+
+.nav-link:hover {
+  background: #ddd;
+}
+
+/* Mobile dropdown arrow */
+@media (max-width: 991px) {
+
+
+
+
+  ul.dropdown {
+    position: static;
+  }
+}
+
+.about-header-area a {
+  text-align: justify !important;
+}
+
+.service-auhtor-boxarea {
+  position: relative;
+}
+
+.service-auhtor-boxarea img {
+  position: absolute;
+  top: -80px;
+  left: 15%;
+  border-radius: 10px;
+}
+
+.contact-box {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+
+.contact-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.4s ease-in-out;
+
+}
+
+.contact-box:hover i {
+  background-color: var(--ztc-text-text-2);
+  transition: 0.4s ease-in-out;
+}
+
+.contact-box:hover h5 {
+  color: #393185;
+  transition: 0.4s ease-in-out;
+}
+
+.contact-box i {
+  font-size: 30px;
+  /* color: var(--ztc-text-text-2); */
+  color: white !important;
+  background-color: #393185;
+  padding: 14px;
+  border-radius: 50px;
+
+}
+
+.contact-box h5 {
+  margin-top: 10px;
+  color: var(--ztc-text-text-2);
+  font-weight: 700;
+}
+
+.contact-box p {
+  margin-top: 10px;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: -17px;
+}
+
+.email-contact-box {
+  padding-bottom: 90px !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.form-control {
+  padding: 15px;
+  border: 2px solid #393185;
+  ;
+}
+
+.btn-primary {
+  background-color: #393185;
+}
+
+.btn-primary:hover {
+  background-color: var(--ztc-text-text-2);
+}
+
+.product-page h2 {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
