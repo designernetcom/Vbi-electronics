@@ -12893,3 +12893,13 @@ li.submenu.show>ul.dropdown {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
 }
+
+.gallary-section h3{
+  display: none !important;
+}
+.gallary-section .product-card{
+  border: 1px solid gray !important;
+}
+.gallary-section .product-card img{
+  height: 200px !important;
+}
