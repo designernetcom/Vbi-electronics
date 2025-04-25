@@ -12803,10 +12803,16 @@ li.submenu.show>ul.dropdown {
 .service-auhtor-boxarea img {
   position: absolute;
   top: -50px;
-  left: 210px;
+  left: 39%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+@media (max-width:768px) {
+  .service-auhtor-boxarea-mission{
+    margin-top: 50px;
+  }
+}
+
 
 .contact-box {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
