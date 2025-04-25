@@ -9334,6 +9334,9 @@ img {
   font-weight: var(--ztc-weight-medium);
   transition: all 0.4s;
 }
+.content-area:hover h2{
+  color: white !important;
+}
 
 .team3-section-area .team-auhtor-boxes .content-area ul {
   margin-top: 24px;
@@ -12814,8 +12817,8 @@ li.submenu.show>ul.dropdown {
 
 .service-auhtor-boxarea img {
   position: absolute;
-  top: -80px;
-  left: 15%;
+  top: 8px;
+  left: 12%;
   border-radius: 10px;
 }
 
@@ -12903,3 +12906,14 @@ li.submenu.show>ul.dropdown {
 .gallary-section .product-card img{
   height: 200px !important;
 }
+/* .service-auhtor-boxarea-vision {
+  background-image: url(/assets/img/all-images/Vision\ background.jpg);
+  background-size: cover;
+  backdrop-filter: blur(10px) !important;
+}
+.service-auhtor-boxarea-mission{
+  background-image: url(/assets/img/all-images/Mission-background.jpg);
+  background-size: cover;
+  backdrop-filter: blur(10px) !important;
+} */
+
