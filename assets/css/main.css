@@ -9337,6 +9337,11 @@ img {
 .content-area:hover h2{
   color: white !important;
 }
+@media (max-width:991px) {
+  .content-area  h2{
+    margin-left: 70px !important;
+  }
+}
 
 .team3-section-area .team-auhtor-boxes .content-area ul {
   margin-top: 24px;
@@ -12817,9 +12822,10 @@ li.submenu.show>ul.dropdown {
 
 .service-auhtor-boxarea img {
   position: absolute;
-  top: 8px;
+  top: 0px;
   left: 12%;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .contact-box {
